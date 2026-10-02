@@ -1,0 +1,12 @@
+{
+  // Marketing site for myspeedapp.com, served as Cloudflare Workers static
+  // assets. Nothing runs server-side: the Worker serves the files in this
+  // folder (see .assetsignore for what stays out) and returns 404.html-less
+  // plain 404s for unknown paths.
+  "name": "speed-website",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "none"
+  }
+}
